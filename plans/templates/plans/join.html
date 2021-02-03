@@ -1,0 +1,43 @@
+{% extends 'plans/base.html' %}
+
+{% block content %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Mashiyat Hussain Blog Premium</h1>
+  <p class="lead">Get to know more about learning Django with Mashiyat. It's all yours with Mashiyat Premium Blog.</p>
+</div>
+
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Monthly</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Rs 1 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Detailed Courses</li>
+          <li>Live Chat</li>
+          <li>Ghar pr Aa kr pdha denge</li>
+          <li>Weekly Members Only Email</li>
+        </ul>
+        <a href="{% url 'checkout' %}?plan=monthly"><button type="button" class="btn btn-lg btn-block btn-outline-primary">Get started</button></a>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Yearly<small class="text-primary">  Save Rs10!</small></h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title">Rs 2 <small class="text-muted">/ yr</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Sb Same H</li>
+          <li>sb Same H</li>
+          <li>sb Same H</li>
+          <li>sb Same H</li>
+        </ul>
+        <a href="{% url 'checkout' %}?plan=yearly"><button type="button" class="btn btn-lg btn-block btn-primary">Get started</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
